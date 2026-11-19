@@ -330,7 +330,7 @@ function CinemaStudio() {
             </div>
 
             <a
-              href="/vice-horizons-60s.mp4"
+              href={`${import.meta.env.BASE_URL}vice-horizons-60s.mp4`}
               download="vice-horizons-60s.mp4"
               className="px-3.5 py-2 rounded-lg text-xs font-semibold bg-white text-slate-950 hover:bg-pink-100 transition flex items-center gap-1.5 shadow-sm"
             >
@@ -352,8 +352,8 @@ function CinemaStudio() {
               {videoAvailable ? (
                 <video
                   ref={videoRef}
-                  src="/vice-horizons-60s.mp4"
-                  poster="/poster.jpg"
+                  src={`${import.meta.env.BASE_URL}vice-horizons-60s.mp4`}
+                  poster={`${import.meta.env.BASE_URL}poster.jpg`}
                   playsInline
                   preload="metadata"
                   onClick={togglePlay}
@@ -394,7 +394,7 @@ function CinemaStudio() {
             <>
               <canvas ref={canvasRef} className="block w-full h-full" />
               <CinemaOverlay frame={liveFrame} />
-              <audio ref={audioRef} src="/vice-horizons-audio.mp3" preload="auto" />
+              <audio ref={audioRef} src={`${import.meta.env.BASE_URL}vice-horizons-audio.mp3`} preload="auto" />
 
               {!isPlaying && !freeCamera && currentTime < 0.2 && (
                 <button
