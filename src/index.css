@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #07060d;
+    color: #f6f4ff;
+    font-family: 'Inter', 'Cantarell', 'Liberation Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Inter', 'Cantarell', 'Liberation Sans', sans-serif;
+  font-weight: 900;
+}
+
+.vice-chrome-text {
+  font-style: italic;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ffe6f4 26%,
+    #ff5cae 52%,
+    #ff8f3c 76%,
+    #fff2c6 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(20, 6, 32, 0.55);
+  filter: drop-shadow(0 0 18px rgba(255, 48, 152, 0.65))
+    drop-shadow(0 6px 22px rgba(0, 0, 0, 0.92));
+}
+
+.vice-cyan-glow {
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.95),
+    0 0 12px rgba(34, 245, 255, 0.85),
+    0 0 26px rgba(34, 245, 255, 0.45);
+}
+
+.vice-pink-glow {
+  text-shadow:
+    0 3px 14px rgba(0, 0, 0, 0.95),
+    0 0 14px rgba(255, 52, 156, 0.9),
+    0 0 30px rgba(255, 52, 156, 0.45);
+}
